@@ -106,13 +106,13 @@
     <header>
         <h1>Privacy Policy</h1>
         <div class="app-name">SlideFix: Photo Puzzle</div>
-        <div class="effective-date">Effective Date: February 27, 2026</div>
+        <div class="effective-date">Effective Date: October 11, 2026</div>
     </header>
 
     <p>This Privacy Policy describes how SlideFix: Photo Puzzle ("we", "us", "the App") collects, uses, and protects your information. By using the App, you agree to the practices described in this policy.</p>
 
     <div class="highlight">
-        <strong>Summary:</strong> SlideFix is a puzzle game that stores almost all data locally on your device. We do not require account creation, do not serve ads, do not use behavioral analytics, and do not sell your data.
+        <strong>Summary:</strong> SlideFix is a puzzle game that stores almost all data locally on your device. We do not require account creation, do not use behavioral analytics, and do not sell your data. The App shows ads from Google AdMob; Google and its ad partners collect some device data to show and measure ads (see section 4).
     </div>
 
     <h2>1. Information We Collect</h2>
@@ -129,15 +129,16 @@
         <li><strong>Device Identifier:</strong> A random unique ID (UUID) is generated on first launch for leaderboard identification. This is not linked to your real identity or device hardware.</li>
         <li><strong>Game Progress:</strong> Scores, stars earned, completion times, puzzles solved, coins, and achievements — all stored locally on your device.</li>
         <li><strong>App Settings:</strong> Your preferences for sound, music, haptic feedback, and grid lines — stored locally.</li>
+        <li><strong>Advertising Data (Google AdMob):</strong> To show ads, Google AdMob collects your device's advertising ID and app set ID, your IP address (from which an approximate location is derived), device and app information, and ad-interaction data. See section 4.</li>
+        <li><strong>Ad Consent Choice:</strong> Stored on your device by Google's consent SDK.</li>
         <li><strong>Crash Data:</strong> If the App crashes, diagnostic information (device model, OS version, stack trace) is sent to Firebase Crashlytics to help us fix bugs.</li>
     </ul>
 
     <h3>C. Information We Do NOT Collect</h3>
     <ul>
         <li>Real name, email address, phone number, or physical address</li>
-        <li>Location data</li>
+        <li>Precise location data</li>
         <li>Contacts or call logs</li>
-        <li>Advertising identifiers</li>
         <li>Browsing history or usage analytics</li>
     </ul>
 
@@ -150,6 +151,7 @@
         <tr><td>Device Identifier (UUID)</td><td>Uniquely identify your leaderboard entry</td></tr>
         <tr><td>Crash Logs</td><td>Diagnose and fix app errors</td></tr>
         <tr><td>Custom Images</td><td>Create custom puzzles (local only)</td></tr>
+        <tr><td>Advertising ID, IP address, device &amp; ad-interaction data</td><td>Show, measure and (with consent where required) personalize ads; prevent ad fraud. Collected by Google AdMob.</td></tr>
     </table>
     </div>
 
@@ -192,6 +194,12 @@
             <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
         </tr>
         <tr>
+            <td>Google AdMob (Mobile Ads SDK &amp; User Messaging Platform)</td>
+            <td>Google</td>
+            <td>Showing ads and asking for ad consent</td>
+            <td><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from apps that show its ads</a></td>
+        </tr>
+        <tr>
             <td>Cloudinary</td>
             <td>Cloudinary Ltd.</td>
             <td>Hosting &amp; serving built-in puzzle images provided by the developer. User-created images are never uploaded.</td>
@@ -199,14 +207,24 @@
         </tr>
     </table>
     </div>
-    <p>We do <strong>not</strong> use any advertising networks, behavioral analytics, or tracking services.</p>
+    <h3>Advertising</h3>
+    <p>The App shows ads provided by Google AdMob: an optional "watch an ad" reward (extra time when the timer runs out) and occasional full-screen ads after solved puzzles. Full-screen ads never appear in the first puzzles, during a puzzle, after a failed puzzle, or in battles.</p>
+    <p>To show ads, measure them and prevent fraud, Google and its partners may collect your device's advertising ID and app set ID, your IP address (from which an approximate location is derived), device and app information, and ad-interaction data (for example which ads were shown or tapped). Where you have consented, they may also use it to personalize ads.</p>
+    <ul>
+        <li><strong>Consent (EEA, UK, Switzerland):</strong> before any ad is requested, the App asks for your consent through Google's User Messaging Platform. You can change your choice at any time in <strong>Settings &rarr; Privacy options</strong>.</li>
+        <li><strong>US state privacy laws:</strong> where applicable, you can opt out of the "sale" or "sharing" of personal information for targeted advertising in <strong>Settings &rarr; Privacy options</strong>.</li>
+        <li><strong>Advertising ID:</strong> you can reset or delete it in your device settings (Settings &rarr; Privacy &rarr; Ads, or Settings &rarr; Google &rarr; Ads).</li>
+        <li>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</li>
+    </ul>
+    <p>We do <strong>not</strong> use behavioral analytics or other tracking services.</p>
 
     <h2>5. Permissions</h2>
     <p>The App requests the following Android permissions:</p>
     <div class="table-wrapper">
     <table>
         <tr><th>Permission</th><th>Reason</th><th>Required?</th></tr>
-        <tr><td>Internet</td><td>Load puzzle images, submit leaderboard scores, send crash reports</td><td>Yes</td></tr>
+        <tr><td>Internet</td><td>Load puzzle images, submit leaderboard scores, send crash reports, load ads</td><td>Yes</td></tr>
+        <tr><td>Advertising ID (added by the Google Mobile Ads SDK)</td><td>Show and measure ads (see section 4)</td><td>Yes</td></tr>
         <tr><td>Camera</td><td>Take photos for custom puzzles. Photos are processed locally on your device and are not uploaded to our servers.</td><td>Optional — only needed for custom puzzles</td>
         </tr>
         <tr><td>Read Media Images</td><td>Select photos from gallery for custom puzzles</td><td>Optional — only needed for custom puzzles</td></tr>
@@ -221,6 +239,7 @@
     <ul>
         <li><strong>Leaderboard:</strong> Your chosen player name, avatar, and game scores are visible to all users on the public leaderboard.</li>
         <li><strong>Firebase/Google:</strong> Leaderboard data and crash diagnostics are processed by Google's Firebase service.</li>
+        <li><strong>Google AdMob:</strong> Advertising data is collected directly by Google and its ad partners to serve ads (section 4).</li>
     </ul>
 
     <h2>7. Data Retention</h2>
@@ -228,6 +247,7 @@
         <li><strong>Local data:</strong> Retained on your device until you uninstall the App or clear its data.</li>
         <li><strong>Leaderboard data:</strong> Retained in Firebase Firestore indefinitely. You may request deletion by contacting us.</li>
         <li><strong>Crash reports:</strong> Retained according to Firebase Crashlytics' default retention policy (90 days).</li>
+        <li><strong>Advertising data:</strong> Retained by Google under its own retention policies.</li>
     </ul>
 
     <h2>8. Data Deletion</h2>
